@@ -1,0 +1,264 @@
+/* FORM STYLE */
+
+.form-control {
+	color: #333;
+outline-offset: 0px;
+outline-width: 1px;
+background: none repeat scroll 0% 0% #FFF;
+//box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 7px #FF7B00 !important;
+border-color: #FF983D;
+margin:10px;
+padding:1px;
+height:25px;
+}
+
+
+.btn_container {
+	display:block;
+}
+
+#submit_form {
+float:right;
+margin-bottom:-60px;
+box-shadow: 0 -3px rgba(0, 0, 0, 0.1) inset;
+-moz-box-shadow: 0 -3px rgba(0, 0, 0, 0.1) inset;
+-webkit-box-shadow: 0 -3px rgba(0, 0, 0, 0.1) inset;
+-o-box-shadow: 0 -3px rgba(0, 0, 0, 0.1) inset;
+font-family: Varela Round;
+margin-top:30px;
+outline-offset: 0px;
+outline-width: 1px;
+color: #FFF;
+background: none repeat scroll 0% 0% #FF923D;
+border-color: #F97100;
+-moz-user-select: none;
+background-image: none;
+border-radius: 4px;
+border: 1px solid transparent;
+cursor: pointer;
+display: inline-block;
+font-size: 14px;
+font-weight: no;
+line-height: 1.42857;
+margin-bottom: 0px;
+padding: 12px 18px;
+text-align: center;
+vertical-align: middle;
+white-space: nowrap;
+
+}
+
+#submit_form:hover {
+opacity: 0.75;
+transition: opacity 0.3s linear;
+-moz-transition: opacity 0.3s linear;
+-webkit-transition: opacity 0.3s linear;
+-o-transition: opacity 0.3s linear;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a img {
+  border: none;
+}
+
+/* ============================================================
+  GLOBALS
+============================================================ */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+
+}
+
+a {
+  text-decoration: none;
+  color: #dc2850;
+}
+
+a:hover {
+  color: #9e1a37;
+}
+
+/* clear floated divs */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ============================================================
+  TEMPLATE
+============================================================ */
+#wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#main {
+  background-color: #fff;
+  padding: 30px 0;
+}
+
+.form_container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+
+
+/* ============================================================
+  COMMON
+============================================================ */
+/* sections */
+section {
+  margin-bottom: 60px;
+  padding: 30px;
+  
+}
+section:last-child {
+  margin-bottom: 0;
+}
+
+/* headings */
+h2 {
+  margin-bottom: 30px;
+}
+
+/* form elements */
+label {
+  display: block;
+}
+
+input[type="text"], input[type="password"] {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  -ms-border-radius: none;
+  -o-border-radius: none;
+  border-radius: none;
+  background-color:#FFFFFF;
+  height:40px;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+  outline: none;
+}
+
+/* lists */
+ul.input-list {
+  list-style: none;
+  margin: 0 -10px;
+  padding: 0;
+}
+ul.input-list li {
+  display: block;
+  padding: 0 10px;
+  width: 24%;
+  float: left;
+}
+
+ul.input-list li:nth-child(3) {
+	width:28%;
+}
+
+@media all and (max-width: 800px) {
+  ul.input-list {
+    margin: 0;
+  }
+  ul.input-list li {
+    padding: 0;
+    width: 100%;
+    float: none;
+    margin-bottom: 10px;
+  }
+}
+/* ============================================================
+  STYLE 1
+============================================================ */
+.style-1 input[type="text"], .style-1 input[type="password"] {
+  padding: 10px;
+  border: solid 1px #FF923D;
+  -webkit-transition: box-shadow 0.3s, border 0.3s;
+  -moz-transition: box-shadow 0.3s, border 0.3s;
+  -o-transition: box-shadow 0.3s, border 0.3s;
+  transition: box-shadow 0.3s, border 0.3s;
+  background-color:#FFFFFF;
+  margin: 10px 0;
+}
+.style-1 input[type="text"]:focus, .style-1 input[type="text"].focus {
+  border: solid 1px #FF923D;
+  -webkit-box-shadow: 0 0 5px 1px #FF923D;
+  -moz-box-shadow: 0 0 5px 1px #FF923D;
+  box-shadow: 0 0 5px 1px #FF923D;
+}
+
+.style-1 input[type="password"]:focus, .style-1 input[type="password"].focus { 
+  border: solid 1px #FF923D;
+  -webkit-box-shadow: 0 0 5px 1px #FF923D;
+  -moz-box-shadow: 0 0 5px 1px #FF923D;
+  box-shadow: 0 0 5px 1px #FF923D;
+  background-color:#FFFFFF;
+}
+
+.error {
+
+	border: solid 1px red !important;
+	 background-color:#F2DEDE;
+}
+
+.error:focus {
+	 border: solid 1px red;
+  -webkit-box-shadow: 0 0 5px 1px #FF0000;
+  -moz-box-shadow: 0 0 5px 1px #FF0000;
+  box-shadow: 0 0 5px 1px #FF000;
+  background-color:#F2DEDE;
+}
